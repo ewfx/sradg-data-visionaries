@@ -61,5 +61,5 @@ The key features and functionalities of our project.
 - 🔹 Other: ML,Pandas
 
 ## 👥 Team
-- **Kailas K M** - 
+- **Kailas K M** - https://github.com/datavisionaries
 - **Chintu Babu Raparthi** - 

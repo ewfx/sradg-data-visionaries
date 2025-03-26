@@ -3,6 +3,7 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
 
+# Using the code from python_ui_account_search.py
 def search_and_display(account_number_entry, predictions_tree, historical_tree):
     """
     Searches for an account number in predictions.csv and displays the result,
@@ -81,12 +82,25 @@ def create_ui():
     # Treeview for historical data
     historical_label = ttk.Label(root, text="Historical Data (historical_data.csv):")
     historical_label.pack(pady=10)
-    historical_tree = ttk.Treeview(root, columns=list(pd.read_csv("historical_data.csv").columns), show="headings")
+    historical_frame = ttk.Frame(root)  # Create a frame for the Treeview and scrollbar
+    historical_frame.pack(pady=10, fill="both", expand=True)
+    historical_tree = ttk.Treeview(historical_frame, columns=list(pd.read_csv("historical_data.csv").columns), show="headings", yscrollcommand=lambda *args: y_scrollbar.set(*args), xscrollcommand=lambda *args: x_scrollbar.set(*args))
     for col in list(pd.read_csv("historical_data.csv").columns):
         historical_tree.heading(col, text=col)
-    historical_tree.pack(pady=10)
+        historical_tree.column(col, width=100)  # Set a default width, adjust as needed
+    historical_tree.pack(side="left", fill="both", expand=True)
+
+    y_scrollbar = ttk.Scrollbar(historical_frame, orient="vertical", command=historical_tree.yview)
+    y_scrollbar.pack(side="right", fill="y")
+    x_scrollbar = ttk.Scrollbar(historical_frame, orient="horizontal", command=historical_tree.xview)
+    x_scrollbar.pack(side="bottom", fill="x")
+
+    historical_tree.configure(xscrollcommand=x_scrollbar.set)
+    historical_tree.configure(yscrollcommand=y_scrollbar.set)
+
 
     root.mainloop()
 
 if __name__ == "__main__":
     create_ui()
+

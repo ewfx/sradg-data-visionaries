@@ -14,7 +14,7 @@
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+A simple and effective ML model which detects Anomaly based on account transaction history and UI to search for any acccount and its details for validations
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  

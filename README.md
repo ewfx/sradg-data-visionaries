@@ -17,11 +17,16 @@
 A simple and effective ML model which detects Anomaly based on account transaction history and UI to search for any acccount and its details for validations
 
 ## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
 🖼️ Screenshots:
+1> Sample History Data created using python
+![image](https://github.com/user-attachments/assets/26d55a5e-9d4d-4d65-a293-52c5d9d69764)
 
-![Screenshot 1](link-to-image)
+2> Snap of output from ML model based on history data
+![image](https://github.com/user-attachments/assets/490d97b3-996c-457f-b81e-f7da3ed421ce)
+
+3> Snap of UI search and results
+![image](https://github.com/user-attachments/assets/bb04e76c-3778-440a-b510-4d1e4d76ab97)
+
 
 ## 💡 Inspiration
 What inspired you to create this project? Describe the problem you're solving.

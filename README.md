@@ -29,10 +29,14 @@ A simple and effective ML model which detects Anomaly based on account transacti
 
 
 ## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+As we are facing lot of reconciliation problems in our project, this problem statement looks interesting and we thought if we get some hands-on here same we could apply to real time project 
 
 ## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+The key features and functionalities of our project.
+1. It creates data for ML model, this data is almost like real time data
+2. As No Labeled Data: stated that we don't have labeled data for anomalies. Reinforcement Learning can work in environments where we don't have explicit examples of what constitutes an anomaly.
+3. Using IsolationForest, it is deriving the comments and Anomaly for each account
+4. Simple UI to search for accounts and is it comes under Anomaly or not and its history in same page
 
 ## 🛠️ How We Built It
 Briefly outline the technologies, frameworks, and tools used in development.

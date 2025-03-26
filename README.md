@@ -38,32 +38,28 @@ The key features and functionalities of our project.
 3. Using IsolationForest, it is deriving the comments and Anomaly for each account
 4. Simple UI to search for accounts and is it comes under Anomaly or not and its history in same page
 
-## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
-
-## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
-
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/ewfx/sradg-data-visionaries.git 
    ```
 2. Install dependencies  
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   pip install -r requirements.txt
    ```
 3. Run the project  
    ```sh
-   npm start  # or python app.py
+   python generate_data.py
+   python predict_anomaly.py
+   python search_and_disply.py
    ```
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Frontend: python
+- 🔹 Backend: python
+- 🔹 Database: filess
+- 🔹 Other: ML,Pandas
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **Kailas K M** - 
+- **Chintu Babu Raparthi** - 

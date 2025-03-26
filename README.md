@@ -62,4 +62,4 @@ The key features and functionalities of our project.
 
 ## 👥 Team
 - **Kailas K M** - https://github.com/Kailas-34
-- **Chintu Babu Raparthi** - https://github.com/datavisionaries
+- **Chintu Babu Raparthi** - https://github.com/ChintuRaparthi
